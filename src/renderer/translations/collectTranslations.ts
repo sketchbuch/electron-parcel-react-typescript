@@ -2,7 +2,7 @@ import { Resource, ResourceKey, ResourceLanguage } from 'i18next';
 import { availableLanguages } from '../constants';
 import { Langs } from './translations.interface';
 
-const fs = window.node;
+const fs = window.node.fs;
 
 export const collectTranslations = (
   pathToLocales: string,
