@@ -1,5 +1,6 @@
 interface Window {
   node: {
-    fs
+    readdirSync: any,
+    readFileSync: any,
   }
 }
