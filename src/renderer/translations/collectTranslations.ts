@@ -2,7 +2,7 @@ import { Resource, ResourceKey, ResourceLanguage } from 'i18next';
 import { availableLanguages } from '../constants';
 import { Langs } from './translations.interface';
 
-const { readdirSync, readFileSync } = window.node;
+const { readdirSync, readFileSync } = window.node.fs;
 
 export const collectTranslations = (
   pathToLocales: string,
@@ -12,9 +12,9 @@ export const collectTranslations = (
     const langFolder = `${pathToLocales}/${curLang}/`;
 
     try {
-      const files = 
-        readdirSync(langFolder, { encoding: 'utf8' })
-          .filter((fileName: string) => fileName.includes('.json'));
+      const files = readdirSync(langFolder, { encoding: 'utf8' }).filter((fileName: string) =>
+        fileName.includes('.json')
+      );
 
       if (files.length > 0) {
         const langNamespaces: ResourceKey = files.reduce(

@@ -12,7 +12,7 @@ const createWindow = (): void => {
     width: 900,
     height: 680,
     webPreferences: {
-      preload: `${__dirname}/../../src/main/preload.js`,
+      preload: `${__dirname}/preload.js`,
     },
   });
 
