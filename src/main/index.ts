@@ -1,5 +1,6 @@
 import electron from 'electron';
 import path from 'path';
+import url from 'url';
 import isDev from 'electron-is-dev';
 
 const app = electron.app;
@@ -16,15 +17,25 @@ const createWindow = (): void => {
     },
   });
 
-  mainWindow.loadURL(
-    isDev ? 'http://localhost:3000' : `file://${path.join(__dirname, '../build/index.html')}`
-  );
+  if (isDev) {
+    mainWindow.loadURL('http://localhost:3000');
+  } else {
+    mainWindow.loadURL(
+      url.format({
+        pathname: path.join(__dirname, '../renderer/index.html'),
+        protocol: 'file:',
+        slashes: true,
+      })
+    );
+  }
 
   mainWindow.on('closed', (): void => {
     mainWindow = null;
   });
 
-  mainWindow.webContents.openDevTools();
+  if (isDev) {
+    mainWindow.webContents.openDevTools();
+  }
 };
 
 app.on('ready', createWindow);
