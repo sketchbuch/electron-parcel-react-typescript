@@ -1,6 +1,6 @@
 {
   "name": "electron-parcel",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An electron app using react, redux, styled components, typescript, and parcel",
   "author": {
     "name": "sketchbuch",
