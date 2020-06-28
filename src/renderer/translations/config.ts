@@ -2,7 +2,7 @@ import { InitOptions } from 'i18next';
 import { availableLanguages, defaultLangKey } from '../constants';
 import { detection } from './detectorOptions';
 
-export const commonConfig: InitOptions = {
+export const config: InitOptions = {
   debug: false,
   detection,
   fallbackLng: [defaultLangKey],
@@ -10,10 +10,9 @@ export const commonConfig: InitOptions = {
   interpolation: {
     escapeValue: false,
   },
-  lng: 'en',
   react: {
     useSuspense: false,
     wait: true,
   },
-  whitelist: [...availableLanguages],
+  supportedLngs: [...availableLanguages],
 };

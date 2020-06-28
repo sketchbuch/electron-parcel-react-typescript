@@ -64,8 +64,6 @@
   },
   "dependencies": {
     "concurrently": "^5.2.0",
-    "convict": "^6.0.0",
-    "cross-env": "^7.0.2",
     "electron-is-dev": "^1.2.0",
     "helmet": "^3.23.1",
     "i18next-browser-languagedetector": "^5.0.0",
