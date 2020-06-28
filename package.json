@@ -1,6 +1,6 @@
 {
   "name": "electron-parcel-react-typescript",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A starter for a React based Electron app using Parcel and Typescript.",
   "author": {
     "name": "sketchbuch",
