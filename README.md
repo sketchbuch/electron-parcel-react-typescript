@@ -92,7 +92,3 @@ This boilerplate uses:
 - Add tests if applicable
 - Increase the version in your feature branch with "yarn release". This will create a version tag and update the change log. Don't forget to push the tag!
 - Fill out PR template and use the checkboxes provided!
-
-## Latest version
-
-v1.0.0
