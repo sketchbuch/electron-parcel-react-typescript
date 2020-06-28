@@ -2,18 +2,6 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-## [1.0.0](https://github.com/sketchbuch/electron-parcel/compare/v0.0.2...v1.0.0) (2020-06-28)
+## [1.0.0](2020-06-28)
 
-### [0.0.2](https://github.com/sketchbuch/electron-parcel/compare/v0.0.1...v0.0.2) (2020-06-28)
-
-### 0.0.1 (2020-06-28)
-
-
-### Features
-
-* initial commit ([7bdc521](https://github.com/sketchbuch/electron-parcel/commit/7bdc52127b895cbd76fa7af94e3ee7243e4d3e87))
-
-
-### Bug Fixes
-
-* sort of - for node imports ([62d94a1](https://github.com/sketchbuch/electron-parcel/commit/62d94a11d06b629104b5da3d479a0b025e7906f0))
+- Initial release

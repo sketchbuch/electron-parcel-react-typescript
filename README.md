@@ -1,12 +1,22 @@
 # Electron Parcel React Typescript Starter
 
-**electron-parcel-react-typescript**
+**electron-parcel-react-typescript-react-typescript**
 
-A starter repo for a React based Electron app using Parcel and Typescript. I have only tested it on linux to build a linux version of the app, I haven't tested it on a Mac or Windows to build their versions of the App but you can just change the build config in package.json if you need to for these versions.
+A starter for a React based Electron app using Parcel and Typescript. I have only tested it on linux to build a linux version of the app, I haven't tested it on a Mac or Windows to build their versions of the App but you can just change the build config in package.json if you need to for these versions.
 
 ## How to use
 
-Run **yarn dev** to start the development version with hot module reloading, or run **yarn electron** to build the application.
+```
+yarn dev
+```
+
+To start the development version with hot module reloading.
+
+```
+yarn electron
+```
+
+To build the distributable application.
 
 All bundled code will be in the build folder, the distributable App will be in dist.
 

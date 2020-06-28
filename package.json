@@ -1,19 +1,19 @@
 {
-  "name": "electron-parcel",
+  "name": "electron-parcel-react-typescript",
   "version": "1.0.0",
-  "description": "An electron app using react, redux, styled components, typescript, and parcel",
+  "description": "A starter for a React based Electron app using Parcel and Typescript.",
   "author": {
     "name": "sketchbuch",
     "url": "https://github.com/sketchbuch"
   },
   "browserslist": [
-    "electron >= 1.8.7"
+    "electron >= 9.0.4"
   ],
   "bugs": {
-    "url": "https://github.com/sketchbuch/electron-parcel/issues"
+    "url": "https://github.com/sketchbuch/electron-parcel-react-typescript/issues"
   },
   "build": {
-    "appId": "com.sketchbuch.electron-parcel",
+    "appId": "com.sketchbuch.electron-parcel-react-typescript",
     "files": [
       "build/**/*",
       "node_modules/**/*",
@@ -41,7 +41,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/sketchbuch/electron-parcel.git"
+    "url": "https://github.com/sketchbuch/electron-parcel-react-typescript.git"
   },
   "scripts": {
     "build:main": "parcel build ./src/main/index.ts -d build/main --public-url /build --target=node6",
