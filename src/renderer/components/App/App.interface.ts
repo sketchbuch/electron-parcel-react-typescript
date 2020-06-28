@@ -1,4 +1,4 @@
-import { Langs } from '../../types';
+import { Langs } from '../../translations/translations.interface';
 import { TFunction } from 'i18next';
 
 export interface Store {
