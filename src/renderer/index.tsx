@@ -6,13 +6,6 @@ import { collectTranslations } from './translations/collectTranslations';
 import { config, i18n } from './translations';
 import Root from './components/Root/Root';
 
-declare global {
-  interface Window {
-    __initialI18nStore__: string;
-    __initialLanguage__: string;
-  }
-}
-
 const resources = collectTranslations(`${__dirname}/../locales`, [...availableLanguages]);
 
 if (!i18n.isInitialized) {

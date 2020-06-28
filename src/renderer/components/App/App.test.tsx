@@ -1,6 +1,6 @@
 import * as React from 'react';
 import 'jest-styled-components';
-import { wait } from '@testing-library/react';
+import { waitFor } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 import { NoProps } from '../../types';
 import { renderWithRedux, renderWithRouter } from '../../tests';
@@ -34,7 +34,7 @@ describe('<App />', () => {
     const { getByTestId, getByText, queryByTestId, queryByText } = renderWithRedux(
       <App {...props} />
     );
-    await wait(
+    await waitFor(
       () => {
         expect(queryByTestId('app-loading')).toBeNull();
         expect(getByTestId('app-loaded')).toBeInTheDocument();
