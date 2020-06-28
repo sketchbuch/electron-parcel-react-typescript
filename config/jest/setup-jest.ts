@@ -5,10 +5,15 @@ import Enzyme from 'enzyme';
 
 Enzyme.configure({ adapter: new Adapter() });
 
-/* jest.mock('react-i18next', () => ({
-  useTranslation: () => { 
-    return {
-      t: (key: string) => key 
+jest.mock('react-i18next', () => {
+  const reactI18next = jest.requireActual('react-i18next')
+
+  return {
+    ...reactI18next,
+    useTranslation: () => { 
+      return {
+        t: (key: string) => key 
+      }
     }
   }
-})); */
+});
