@@ -10,6 +10,7 @@ jest.mock('react-i18next', () => {
 
   return {
     ...reactI18next,
+    t: (key: string) => key,
     useTranslation: () => { 
       return {
         t: (key: string) => key 
